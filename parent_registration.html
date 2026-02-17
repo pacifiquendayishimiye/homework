@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parent Registration</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+    }
+    .form-box {
+      width: 400px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button {
+      background: #d32f2f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-box">
+  <h2>Parent Registration</h2>
+
+  <input type="text" id="fullname" placeholder="Full Name">
+  <input type="email" id="email" placeholder="Email">
+  <input type="tel" id="phone" placeholder="Phone Number">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="registerParent()">Register</button>
+</div>
+
+<script>
+  function registerParent() {
+    const parentData = {
+      fullname: document.getElementById("fullname").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      password: document.getElementById("password").value,
+    };
+
+    console.log("Parent Registered:", parentData);
+    alert("Parent registered successfully!");
+  }
+</script>
+
+</body>
+</html>

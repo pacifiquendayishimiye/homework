@@ -5,4 +5,5 @@ This project contains:
 - Student Registration Form
 - Course Registration Form
 - Book Registration Form
-- pacifique ndayishimiye form
+- pacifique_ndayishimiye form
+- parent registration
